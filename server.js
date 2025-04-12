@@ -18,7 +18,15 @@ console.log("OPENWEATHER_API_KEY:", process.env.OPENWEATHER_API_KEY);
 
 const app = express();
 
-app.use(cors());
+const corsOptions = {
+  origin: [
+    "https://papaya-macaron-62a4ad.netlify.app",
+    "http://localhost:3000", // Allow local development
+  ],
+  methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type"],
+};
+app.use(cors(corsOptions));
 app.use(express.json());
 
 app.use("/api/weather", weatherRoutes);
