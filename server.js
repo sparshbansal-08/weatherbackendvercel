@@ -20,7 +20,7 @@ const app = express();
 
 const corsOptions = {
   origin: [
-    "https://papaya-macaron-62a4ad.netlify.app",
+    "https://spectacular-bavarois-246ebb.netlify.app/",
     "http://localhost:3000", // Allow local development
   ],
   methods: ["GET", "POST"],
