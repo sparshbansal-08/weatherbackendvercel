@@ -5,6 +5,7 @@ const router = express.Router();
 router.get("/", async (req, res) => {
   const { city } = req.query;
 
+  
   if (!city) {
     return res.status(400).json({ error: "City is required" });
   }
