@@ -4,6 +4,7 @@ const router = express.Router();
 
 router.get("/", async (req, res) => {
   const { city } = req.query;
+  
 
   
   if (!city) {
