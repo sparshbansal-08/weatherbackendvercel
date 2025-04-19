@@ -8,6 +8,7 @@ router.get("/", async (req, res) => {
 
   
   
+  
   if (!city) {
     return res.status(400).json({ error: "City is required" });
   }
